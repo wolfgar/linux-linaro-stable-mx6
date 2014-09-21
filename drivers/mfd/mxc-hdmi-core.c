@@ -72,9 +72,9 @@ void hdmi_set_dvi_mode(unsigned int state)
 {
 	if (state) {
 		mxc_hdmi_abort_stream();
-		hdmi_cec_stop_device();
+	//	hdmi_cec_stop_device();
 	} else {
-		hdmi_cec_start_device();
+	//	hdmi_cec_start_device();
 	}
 }
 EXPORT_SYMBOL(hdmi_set_dvi_mode);
